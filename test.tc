@@ -1,0 +1,4 @@
+gets A
+gets B
+puts A + B
+exit

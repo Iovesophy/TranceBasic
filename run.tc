@@ -1,0 +1,4 @@
+INPUT A
+INPUT B
+PRINT  A + B
+EXIT 
