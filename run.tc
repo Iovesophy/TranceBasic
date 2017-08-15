@@ -1,4 +1,7 @@
 INPUT A
 INPUT B
 PRINT  A + B
+PRINT  A * B
+PRINT  A / B
+PRINT  A - B
 EXIT 

@@ -1,4 +1,7 @@
 gets A
 gets B
 puts A + B
+puts A * B
+puts A / B
+puts A - B
 exit
