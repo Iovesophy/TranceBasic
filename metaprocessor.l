@@ -22,15 +22,17 @@ else              { printf("☂ "); }
 
 for                  { printf("↺ "); }
 
+to                   { printf("~"); }
+
 puts                 { printf("☀ "); }
 
-end                { printf("✔ "); }
+exit                { printf("✔ "); }
 
 endif               { printf("x☁️ "); }
 
 endfor              { printf("x↺ "); }
 
-#             { printf("≫"); }
+#             { printf("≫ "); }
 
 gets               { printf("→"); }
 

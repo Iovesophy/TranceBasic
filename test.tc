@@ -4,4 +4,6 @@ puts A + B
 puts A * B
 puts A / B
 puts A - B
-exit
+gets C
+puts A + B + C
+# comment

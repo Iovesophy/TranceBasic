@@ -4,4 +4,6 @@ PRINT  A + B
 PRINT  A * B
 PRINT  A / B
 PRINT  A - B
-EXIT 
+INPUT C
+PRINT  A + B + C
+# comment
