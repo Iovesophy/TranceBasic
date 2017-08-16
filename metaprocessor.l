@@ -11,28 +11,28 @@
 
 %%
 
-[\s ]+ { printf("%s",yytext); }
+[  ]+ { printf("%s",yytext); }
 
 
-if 		{ printf("☁️ "); }
+if                { printf("☁️ "); }
 
-elsif 		{ printf("☁-☂ "); }
+elsif            { printf("☁-☂ "); }
 
-else		{ printf("☂ "); }
+else              { printf("☂ "); }
 
-for  		{ printf("↺ "); }
+for                  { printf("↺ "); }
 
-puts  		{ printf("☀ "); }
+puts                 { printf("☀ "); }
 
-exit 		{ printf("✔ "); }
+end                { printf("✔ "); }
 
-endif 		{ printf("x☁️ "); }
+endif               { printf("x☁️ "); }
 
-endfor  	{ printf("x↺ "); }
+endfor              { printf("x↺ "); }
 
-#		{ printf("≫"); }
+#             { printf("≫"); }
 
-gets    	{ printf("→"); }
+gets               { printf("→"); }
 
 [^\x00-\x7F] |
 [ぁ-んァ-ヶ]+ 	{ printf("%s",yytext); }
