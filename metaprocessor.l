@@ -28,9 +28,9 @@ p                 { printf("☀ "); }
 
 end                { printf("✔ "); }
 
-endif               { printf("x☁️ "); }
+endi               { printf("x☁️ "); }
 
-endloop              { printf("x↺ "); }
+endf              { printf("x↺ "); }
 
 #             { printf("≫ "); }
 
