@@ -113,4 +113,5 @@ end
 system('rm -f metaprocessor')
 system('lex metaprocessor.l')
 system('cc -o metaprocessor lex.yy.c -ll')
+system('rm -f lex.yy.c')
 

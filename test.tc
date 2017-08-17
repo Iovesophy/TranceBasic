@@ -1,9 +1,2 @@
-gets A
-gets B
-puts A + B
-puts A * B
-puts A / B
-puts A - B
-gets C
-puts A + B + C
-# comment
+# trancebasic sample program
+if

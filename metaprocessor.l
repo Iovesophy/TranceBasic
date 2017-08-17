@@ -20,17 +20,17 @@ elsif            { printf("☁-☂ "); }
 
 else              { printf("☂ "); }
 
-for                  { printf("↺ "); }
+loop                  { printf("↺ "); }
 
 to                   { printf("~"); }
 
-puts                 { printf("☀ "); }
+p                 { printf("☀ "); }
 
-exit                { printf("✔ "); }
+end                { printf("✔ "); }
 
 endif               { printf("x☁️ "); }
 
-endfor              { printf("x↺ "); }
+endloop              { printf("x↺ "); }
 
 #             { printf("≫ "); }
 
