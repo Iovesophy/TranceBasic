@@ -12,4 +12,12 @@ minibasicの演算子を自分で定義でき、多くの国の言語でプロ�
 # 使用方法
 
 ```
+$ git clone https://github.com/Iovesophy/TranceBasic.git  
+
+```
+でクローンしてください
+また、basicが必要なので
+私が制作したminibasicをこのTranceBasicのフォルダー上にクローンしてください。  
+
+```
 $ git clone 
