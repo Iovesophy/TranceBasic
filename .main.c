@@ -99,6 +99,7 @@ txinp()
 		tend++;
 	} while ((*fgets(buf[tend],80,stdin))!='q');
 	predel(i);
+	printf("please push enter key to continue.");
 }
 txlst()
 {
@@ -123,6 +124,7 @@ txedt()
 	if ((c=getchar())!='q')
 		*fgets(dumy,80,stdin);
 		strcpy(buf[i],dumy);
+	printf("please push enter key to continue.");
 }
 ins()
 {

@@ -26,7 +26,7 @@ to                   { printf("~"); }
 
 puts                 { printf("☀ "); }
 
-ext                { printf("✔ "); }
+exit                { printf("✔ "); }
 
 endif               { printf("x☁️ "); }
 

@@ -5,7 +5,7 @@ puts "TranceBasic. you can use free operator name. but every operator is not sam
 puts "☁️  is IF operator. please input your IF operator call name."
 
 IF = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
-p IF
+
 puts "☁-☂  is ELSE IF operator. please input your ELSE IF operator call name."
 
 ELSEIF = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
@@ -14,23 +14,29 @@ puts "☂ is ELSE operator. please input your ELSE operator call name."
 
 ELSE = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
-puts "↺ is FOR operator. please input your FOR operator call name and ~ TO operator call name."
-
-FOR = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
-
-TO = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
-
-puts "☀ is PRINT operator. please input your PRINT operator call name."
-
-PRINT = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
-
 puts "x☁️ is ENDIF operator. please input your ENDIF operator call name."
 
 ENDIF = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
+puts "↺ is FOR operator. please input your FOR operator call name." 
+
+FOR = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
+
+puts "~ is TO operator call name."
+
+TO = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
+
+puts "⌒  is STEP operator call name."
+
+STEP = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
+
 puts "x↺ is ENDFOR operator. please input your ENDFOR operator call name."
 
 ENDFOR = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
+
+puts "☀ is PRINT operator. please input your PRINT operator call name."
+
+PRINT = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
 puts "✔ is EXIT operator. please input your EXIT operator call name."
 
@@ -71,6 +77,8 @@ File.open(".metaprocessor.l","w") do |code|
 	code.puts "#{FOR}                  { printf(\"↺ \"); }"
 	code.puts ""
 	code.puts "#{TO}                   { printf(\"~\"); }"
+	code.puts ""
+	code.puts "#{STEP}                  { printf(\"⌒ \"); }"
 	code.puts ""
 	code.puts "#{PRINT}                 { printf(\"☀ \"); }"
 	code.puts ""

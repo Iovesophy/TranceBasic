@@ -33,7 +33,9 @@ x↺  		{ printf("NEXT"); }
 
 ✔ 		{ printf("EXIT"); }
 
-~		{ printf("GO"); }
+~		{ printf("TO"); }
+
+⌒　		{ printf("STEP"); }
 
 [^\x00-\x7F] |
 [ぁ-んァ-ヶ]+ 	{ printf("%s",yytext); }
