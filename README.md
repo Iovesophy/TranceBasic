@@ -20,4 +20,22 @@ $ git clone https://github.com/Iovesophy/TranceBasic.git
 私が制作したminibasicをこのTranceBasicのフォルダー上にクローンしてください。  
 
 ```
-$ git clone 
+$ git clone https://github.com/Iovesophy/basic.git
+
+```  
+クローンが完了しましたら、
+クローンが完了したフォルダーそれぞれにmakeを実行してください
+
+```
+$ cd TranceBasic/basic
+$ make
+$ cd ..
+$ make
+
+```
+makeの最中に自分の付けたい演算子名を定義できますので定義してください。
+
+定義が完了されましたらコンパイルは完了です。
+
+
+
