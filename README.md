@@ -20,9 +20,9 @@ $ git clone https://github.com/Iovesophy/TranceBasic.git
 私が制作したminibasicをこのTranceBasicのフォルダー上にクローンしてください。  
 
 ```
-$ git clone https://github.com/Iovesophy/basic.git
+$ git clone https://github.com/Iovesophy/basic.git　　
 
-```  
+```
 クローンが完了しましたら、
 クローンが完了したフォルダーそれぞれにmakeを実行してください
 
