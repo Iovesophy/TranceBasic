@@ -1,9 +1,0 @@
-INPUT A
-INPUT B
-PRINT  A + B
-PRINT  A * B
-PRINT  A / B
-PRINT  A - B
-INPUT C
-PRINT  A + B + C
-# comment

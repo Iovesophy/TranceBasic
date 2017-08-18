@@ -1,0 +1,10 @@
+gets A
+gets B
+gets C
+
+D = A/B
+if D < A
+ D = D + 1
+endif
+E = D * C
+puts E

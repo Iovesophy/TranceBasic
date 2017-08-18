@@ -33,6 +33,8 @@ x↺  		{ printf("NEXT"); }
 
 ✔ 		{ printf("EXIT"); }
 
+~		{ printf("GO"); }
+
 [^\x00-\x7F] |
 [ぁ-んァ-ヶ]+ 	{ printf("%s",yytext); }
 

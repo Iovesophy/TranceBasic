@@ -189,7 +189,7 @@ metaprocessor(argv)
 		return(0);
 	}
 
-	sprintf(tmp2,"rm M%s; ./metaprocessor %s > M%s",argv[1],argv[1],argv[1]);
+	sprintf(tmp2,"rm M%s; ./.metaprocessor %s > M%s",argv[1],argv[1],argv[1]);
 	system(tmp2);
 	
 	sprintf(tmp3,"./led M%s",argv[1]);
@@ -207,7 +207,7 @@ originprocessor(argv)
         printf("\x1b[0m");
 	printf("Program start!\n");
 
-        sprintf(tmp4,"./originprocessor %s > run.tc",argv[1]);
+        sprintf(tmp4,"./.originprocessor %s > run.tc",argv[1]);
         system(tmp4);
 	system("./basic/basic run.tc");
 }

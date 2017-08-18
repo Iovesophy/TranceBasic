@@ -1,3 +1,9 @@
-# makefile for tranceBasic metaprocessor.
-mastermake: trancebasicmaker.rb main.c
-	ruby trancebasicmaker.rb & cc main.c -o led 
+MAIN = .main
+OBJ = $(MAIN).c
+
+all:    trancecalc.exe
+trancecalc.exe: $(OBJ)
+	ruby .trancebasicmaker.rb  && cc -o led  $(OBJ)
+
+$(MAIN).obj:    $(MAIN).c
+

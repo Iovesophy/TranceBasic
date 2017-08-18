@@ -4,47 +4,47 @@
 puts "TranceBasic. you can use free operator name. but every operator is not same name. happy coding!! kazuya"
 puts "☁️  is IF operator. please input your IF operator call name."
 
-IF = gets.chomp.to_s
-
+IF = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
+p IF
 puts "☁-☂  is ELSE IF operator. please input your ELSE IF operator call name."
 
-ELSEIF = gets.chomp.to_s
+ELSEIF = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
 puts "☂ is ELSE operator. please input your ELSE operator call name."
 
-ELSE = gets.chomp.to_s
+ELSE = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
 puts "↺ is FOR operator. please input your FOR operator call name and ~ TO operator call name."
 
-FOR = gets.chomp.to_s
+FOR = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
-TO = gets.chomp.to_s
+TO = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
 puts "☀ is PRINT operator. please input your PRINT operator call name."
 
-PRINT = gets.chomp.to_s
+PRINT = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
 puts "x☁️ is ENDIF operator. please input your ENDIF operator call name."
 
-ENDIF = gets.chomp.to_s
+ENDIF = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
 puts "x↺ is ENDFOR operator. please input your ENDFOR operator call name."
 
-ENDFOR = gets.chomp.to_s
+ENDFOR = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
 puts "✔ is EXIT operator. please input your EXIT operator call name."
 
-EXIT = gets.chomp.to_s
+EXIT = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
 puts "≫  is # (COMMENT) operator. please inputs your # operator call name."
 
-COMMENT = gets.chomp.to_s
+COMMENT = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
 puts "→ is INPUT operator. please input your INPUT operator call name."
 
-INPUT = gets.chomp.to_s
+INPUT = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
-File.open("metaprocessor.l","w") do |code|
+File.open(".metaprocessor.l","w") do |code|
 
 	code.puts "%{"
 	code.puts ""
@@ -110,8 +110,11 @@ File.open("metaprocessor.l","w") do |code|
 
 end
 
-system('rm -f metaprocessor')
-system('lex metaprocessor.l')
-system('cc -o metaprocessor lex.yy.c -ll')
+system('rm -f .metaprocessor')
+system('lex .metaprocessor.l')
+system('cc -o .metaprocessor lex.yy.c -ll')
+system('rm -f lex.yy.c')
+system('lex .originpro.l')
+system('cc -o .originprocessor lex.yy.c -ll')
 system('rm -f lex.yy.c')
 
