@@ -24,6 +24,8 @@ for                  { printf("↺ "); }
 
 to                   { printf("~"); }
 
+step                  { printf("⌒ "); }
+
 puts                 { printf("☀ "); }
 
 exit                { printf("✔ "); }
