@@ -37,6 +37,8 @@ x↺  		{ printf("NEXT"); }
 
 ⌒　		{ printf("STEP"); }
 
+❖ 		{ printf("SYSTEM"); }
+
 [^\x00-\x7F] |
 [ぁ-んァ-ヶ]+ 	{ printf("%s",yytext); }
 

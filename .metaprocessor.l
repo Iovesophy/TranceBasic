@@ -30,13 +30,15 @@ puts                 { printf("☀ "); }
 
 exit                { printf("✔ "); }
 
-endif               { printf("x☁️ "); }
+endfi               { printf("x☁️ "); }
 
 endfor              { printf("x↺ "); }
 
 #             { printf("≫ "); }
 
 gets               { printf("→"); }
+
+system               { printf("❖ "); }
 
 [^\x00-\x7F] |
 [ぁ-んァ-ヶ]+ 	{ printf("%s",yytext); }

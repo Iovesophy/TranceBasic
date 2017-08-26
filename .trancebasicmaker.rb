@@ -50,6 +50,11 @@ puts "→ is INPUT operator. please input your INPUT operator call name."
 
 INPUT = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
 
+puts "❖ is SYSTEM operator. please input your SYSTEM operator call name."
+
+SYSTEM = gets.to_s.gsub(/(\r\n|\r|\n|\f)/,"")
+
+
 File.open(".metaprocessor.l","w") do |code|
 
 	code.puts "%{"
@@ -91,6 +96,8 @@ File.open(".metaprocessor.l","w") do |code|
 	code.puts "#{COMMENT}             { printf(\"≫ \"); }"
 	code.puts ""
 	code.puts "#{INPUT}               { printf(\"→\"); }"
+	code.puts ""
+	code.puts "#{SYSTEM}               { printf(\"❖ \"); }"
 	code.puts ""
 	code.puts "[^\\x00-\\x7F] \|"
 	code.puts "[ぁ-んァ-ヶ]+ 	{ printf(\"%s\",yytext); }"
